@@ -1,0 +1,11 @@
+name: hello gha
+
+on:
+  workflow_dispatch
+
+jobs:
+  pranav:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: "print("Hello world")"
+      - shell: python
