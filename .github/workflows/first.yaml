@@ -1,0 +1,13 @@
+name: Hello Github Actions
+
+on:
+  push:
+    workflow_dispatch:
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps: 
+      - run: echo "Hello from Github Actions"
+      - run: echo "Hello MR ${{github.actor}}"
+      - run: date
